@@ -44,7 +44,7 @@ public class ImageService {
         int originalSize = totalPixels * 24;
         int compressedSize = encodedData.size() * (24 + 32);
         double compressionRatio = compressionCalculator.calculateCompressionRatio(originalSize, compressedSize);
-        double redundancy = compressionCalculator.calculateRedundancy(24, encodedEntropy); // Максимальная энтропия 24 бита
+        double redundancy = compressionCalculator.calculateRedundancy(24, encodedEntropy);
 
 
         RLEFileReader fileReader = new RLEFileReader();
@@ -68,8 +68,4 @@ public class ImageService {
                 .redundancy(redundancy)
                 .build();
     }
-
-
 }
-
-
