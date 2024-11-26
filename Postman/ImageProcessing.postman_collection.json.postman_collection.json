@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "06589e76-a56f-4698-9fe6-8c5391802ee6",
+		"name": "ImageProcessing.postman_collection.json",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34661648"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/faruh/Desktop/photo_2024-10-21_22-59-28.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/image/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"image",
+						"upload"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

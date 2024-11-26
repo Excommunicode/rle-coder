@@ -19,10 +19,7 @@ public class ImageService {
 
     @SneakyThrows
     public ImageDTO processImage(MultipartFile file) {
-
         int[][][] rgbArray = imageReader.processImage(file);
-
-
         RLEEncoder encoder = new RLEEncoder();
         List<int[]> encodedData = encoder.encode(rgbArray);
 

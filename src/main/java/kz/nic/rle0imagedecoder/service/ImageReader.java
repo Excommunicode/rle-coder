@@ -31,7 +31,6 @@ public class ImageReader {
                 rgbArray[y][x][2] = pixel & 0xff;
             }
         }
-
         return rgbArray;
     }
 }
